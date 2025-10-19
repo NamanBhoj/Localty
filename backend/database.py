@@ -18,9 +18,11 @@ Base = declarative_base()
 
 
 def create_db():
-    from backend.database import Base, engine
-    from backend import models
+   
 
     print("Creating")
     Base.metadata.create_all(bind=db_engine)
     print("Creatied")
+
+
+# print(create_db())
